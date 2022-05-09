@@ -30,9 +30,15 @@ header {
     align-self: flex-start;
 }
 
+#ersterTitel {
+    position: relative;
+    top: 20px;
+}
+
 #infoSec {
     display: flex;
     align-items: center;
+    justify-content: space-around;
     position: relative;
     margin: auto;
     padding: 30px 0px;
@@ -41,30 +47,43 @@ header {
     height: 10em;
 }
 
+#infoSec > * {
+    margin: 10px;
+}
+
 #butSec {
-    position: absolute;
+    position: relative;
     /* border-style: solid;
     border: 2px solid blue; */
-    height: 7em;
-    left: 20px;
+    min-width: 160px;
+}
+
+#fontSec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    vertical-align: center;
+    min-height: 70px;
+    min-width: 350px
 }
 
 #textSec {
-    position: absolute;
-    display: flex;
+    position: relative;
     /* border-style: solid;
     border: 2px solid green; */
-    height: 7em;
-    width: 75%;
     text-align: left;
-    right: 1%;
-    align-items: center;
+    flex-shrink: 1;
+    max-width: 600px;
+    min-width: 300px;
 }
 
 #tableSec {
     position: relative;
     margin: auto;
-    width: auto;
+    max-width: 2000px;
 }
 
 #bitbsp {

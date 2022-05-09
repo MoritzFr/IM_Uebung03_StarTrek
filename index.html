@@ -2,16 +2,15 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Font Website</title>
+    <title>Font Vergleich</title>
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js"></script>
+    <link rel="icon" href="./material/favicon.png" type="image/img">
 </head>
 <body>
     <header>
         <h1>Vergleich von Bitmap- und Outline-Fonts</h1>
-        <p>Charakteristische Merkmale von Bitmap- und Outline-Fonts:</p>
+        <h3 id="ersterTitel">Charakteristische Merkmale von Bitmap- und Outline-Fonts:</h3>
     </header>
     <main>
         <div id="infoSec">
@@ -19,17 +18,19 @@
                 <button class="button" id="b1">Bitmap-Font</button><br>
                 <button class="button" id="b2">Outline-Font</button>
             </div>
+            <div id="fontSec">
+                <span class="bitmap" id="bitbsp">EXPLORE</span>
+                <span class="outline" id="outbsp">EXPLORE</span>
+            </div>
             <div id="textSec">
-                <div id="p1">
-                    <span id="bitbsp">EXPLORE</span>
+                <div class="bitmap" id="p1">
                     <ul>
                         <li>Rastergrafik (wie Bilddatei)</li>
                         <li>Symbol als Sammlung von Pixeln (horizontal und vertikal angeordnet)</li>
                         <li>Für jeden Buchstaben festgelegt, welche einzelnen Pixel angezündet werden, wenn Buchstabe auf Bildschirm erscheinen soll</li>
                     </ul>
                 </div>
-                <div id="p2">
-                    <span id="outbsp">EXPLORE</span>
+                <div class="outline" id="p2">
                     <ul>
                         <li>Vektorgrafik</li>
                         <li>Formen der Buchstaben/Symbole mittels Kurven oder Vektoren im 2D-Vektorraum gespeichert</li>
