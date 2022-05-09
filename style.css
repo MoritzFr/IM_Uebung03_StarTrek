@@ -1,6 +1,6 @@
 @font-face {
     font-family: HydraPro;
-    src: url(./material/HydraPro-Medium.otf);
+    src: url(./material/HydraTextPro.otf);
 }
 
 @font-face {
@@ -19,6 +19,8 @@ body {
     justify-content: center;
     font-family: HydraPro;
     height: 100%;
+    margin: 0% 10%;
+    margin-bottom: 10%;
 }
 
 #infoSec {
@@ -105,4 +107,11 @@ img {
 .disabled {
     opacity: 0.6;
     cursor: auto;
+}
+
+footer {
+    text-align: right;
+    padding: 20px;
+    position: relative;
+    margin-top: auto;
 }
