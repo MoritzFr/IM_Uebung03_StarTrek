@@ -3,12 +3,70 @@
     src: url(./material/HydraPro-Medium.otf);
 }
 
+@font-face {
+    font-family: Bitmap;
+    src: url(./material/StarTrekHead_BitMap.ttf);
+}
+
+@font-face {
+    font-family: Outline;
+    src: url(./material/HydraPro-StarTrekEdit.otf);
+}
+
 body {
+    position: relative;
+    display: flex;
+    justify-content: center;
     font-family: HydraPro;
+    height: 100%;
 }
 
 #infoSec {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: auto;
     padding: 30px 0px;
+    /* border-style: solid;
+    border: 2px solid red; */
+    height: 10em;
+}
+
+#butSec {
+    position: absolute;
+    /* border-style: solid;
+    border: 2px solid blue; */
+    height: 7em;
+    left: 20px;
+}
+
+#textSec {
+    position: absolute;
+    display: flex;
+    /* border-style: solid;
+    border: 2px solid green; */
+    height: 7em;
+    width: 75%;
+    text-align: left;
+    right: 1%;
+    align-items: center;
+}
+
+#tableSec {
+    position: relative;
+    margin: auto;
+}
+
+#bitbsp {
+    font-family: Bitmap;
+    text-align: center;
+    font-size: 3em;
+}
+
+#outbsp {
+    font-family: Outline;
+    text-align: center;
+    font-size: 3em;
 }
 
 table, th, td {
@@ -20,11 +78,6 @@ table, th, td {
 
 img {
     max-width: 500px;
-}
-
-#textSec {
-    position: relative;
-    float: right;
 }
 
 #p1 {
