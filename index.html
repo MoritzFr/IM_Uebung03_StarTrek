@@ -9,10 +9,11 @@
     <script src="./script.js"></script>
 </head>
 <body>
-    <main>
+    <header>
         <h1>Vergleich von Bitmap- und Outline-Fonts</h1>
         <p>Charakteristische Merkmale von Bitmap- und Outline-Fonts:</p>
-
+    </header>
+    <main>
         <div id="infoSec">
             <div id="butSec">
                 <button class="button" id="b1">Bitmap-Font</button><br>
@@ -52,44 +53,77 @@
                 <tr>
                     <td>
                         <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>Lädt schneller</li>
+                            <li>leichter einzelne Symbole anzupassen</li>
+                            <li>präzise</li>
                         </ul>
                     </td>
                     <td>
                         <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>sehen vergrößert schlecht aus</li>
+                            <li>(non responsive)</li>
+                            <li>oft größer</li>
                         </ul>
                     </td>
                     <td>
                         <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>flexibel für unterschiedliche Effekte</li>
+                            <li>auch bei Änderungen der Größe maximale Qualität</li>
                         </ul>
                     </td>
                     <td>
                         <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>langsamer</li>
+                            <li>schwerer zu implementieren</li>
                         </ul>
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2"><img src="./material/Screenshot 2022-05-05 165934.png" alt="Bild konnte nicht geladen werden."></td>
-                    <td colspan="2"><img src="./material/Unbenannt.JPG" alt="Bild konnte nicht geladen werden."></td>
+                    <td colspan="2" class="tdimg"><img src="./material/Screenshot 2022-05-05 165934.png" alt="Bild konnte nicht geladen werden."></td>
+                    <td colspan="2" class="tdimg"><img src="./material/Unbenannt.JPG" alt="Bild konnte nicht geladen werden."></td>
+                </tr>
+            </table>
+            <br>
+            <h3>Unterschiede in der Erstellung</h3>
+            <table>
+                <tr>
+                    <td></td>
+                    <th>Bitmap-Font</th>
+                    <th>Vektor-Font</th>
+                </tr>
+                <tr>
+                    <th>Der Glyphenkörper ...</th>
+                    <td>... wird aus einzeln setzbaren Punkten/Pixeln innerhalb der Punktmatrix gezeichnet.</td>
+                    <td>... wird aus einzeln setzbaren Koordinaten und dazugehörigen Kurveninformationen innerhalb der Punktmatrix 
+                        berechnet.</td>
+                </tr>
+                <tr>
+                    <th>Die Bearbeitungsmöglichkeiten der Glyphen:</th>
+                    <td>Einzelne Punkte/Pixel innerhalb der Glyphe können hinzugefügt und gelöscht werden</td>
+                    <td>
+                        <ul>
+                            <li>Verktorpunkte können beliebig hinzugefügt, gelöscht und verschoben werden</li>
+                            <li>Kurveninformationen an den Vektorpunkten können beliebig verändert werden</li>
+                        </ul>
+                    </tr>
+                </tr>
+                <tr>
+                    <th>Besonderheiten der Punktmatrix</th>
+                    <td>
+                        <ul>
+                            <li>In Pixel unterteilt; Raster aus Quadraten</li>
+                            <li>Nur Formen möglich, die in Quadratraster dargestellt werden können</li>
+                            <li>Minimale Breiten der Haarlinien und Serifen durch Größe der Quadrate festgelegt</li>
+                            <li>Abstände durch das Raster leicht messbar</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Visualisierung der Grundlinie, Oberlänge und Unterlagen in Form von Hilfslinien</li>
+                            <li>Minimale Breiten beliebig setzbar durch vektorbasierte Anwendung; keine Beschränkungen aber 
+                                auch wenig Erstellungshilfen bei der Schriftgestaltung</li>
+                        </ul>
+                    </td>
                 </tr>
             </table>
         </div>
