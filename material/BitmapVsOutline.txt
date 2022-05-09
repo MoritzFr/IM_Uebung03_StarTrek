@@ -1,0 +1,20 @@
+Bitmap Vorteile:
+- Lädt schneller
+- leichter einzelne Symbole anzupassen
+- präzise
+Bitmap Nachteile
+- sehen vergrößert schlecht aus
+- (non responsive)
+- oft größer
+Outline Nachteile
+- langsamer
+- schwerer zu implementieren
+Outline Vorteile
+- flexibel für unterschiedliche Effekte
+- auch bei Änderungen der Größe maximale Qualität
+
+
+
+
+
+
